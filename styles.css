@@ -9,16 +9,18 @@ body {
 header {
   height: 4rem;
   width: 100%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -12px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .location {
   display: flex;
-  background-color: #ececec;
+  background-color: #eaeaea;
   justify-content: center;
   align-items: center;
   height: 3.5rem;
@@ -72,4 +74,50 @@ p {
   border: none;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   font-size: 1rem;
+}
+
+.tutorial {
+  padding: 1.5rem;
+}
+
+.tutorial-item-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.tutorial-item {
+  width: 95%;
+  height: 5.7rem;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 2rem;
+  font-weight: bold;
+  background-color: #f6f7f7;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.tutorial i {
+  font-size: 1.4rem;
+  width: 1.2rem;
+  color: gray;
+  margin-right: 1rem;
+}
+
+.tutorial-item-num {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: #9257dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  left: 0;
 }
