@@ -28,11 +28,14 @@ header {
 
 .location i {
   position: absolute;
-  left: 7.2rem;
+  left: 7rem;
+  height: 1.4rem;
+  font-size: 1.2rem;
 }
 
 p {
   margin: 0;
+  font-size: 1.1rem;
 }
 
 .site-logo {
@@ -45,4 +48,24 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.explore-restaurants-container p {
+  text-align: center;
+  color: #7c7c7c;
+}
+
+.explore-button {
+  background: rgb(158, 88, 221);
+  background: linear-gradient(
+    352deg,
+    rgba(158, 88, 221, 1) 0%,
+    rgba(232, 114, 218, 1) 100%
+  );
+  height: 3.5rem;
+  width: 13.5rem;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 1rem;
 }
