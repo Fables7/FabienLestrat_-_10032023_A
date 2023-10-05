@@ -252,3 +252,51 @@ footer {
   border-top-left-radius: 40px;
   margin-top: -40px;
 }
+
+.menu-main-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0.5rem;
+  height: 3.5rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 1rem;
+}
+
+.menu-item .info {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-item .title {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.menu-item span {
+  font-size: 0.8rem;
+}
+.menu-item .price {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.section-title {
+  font-size: 0.9rem;
+}
+.section-underline {
+  width: 2.3rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.9rem;
+  height: 0.2rem;
+  background-color: #88e0cb;
+}
