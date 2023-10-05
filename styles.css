@@ -267,25 +267,21 @@ footer {
 
 .menu-item {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: white;
-  padding: 0.5rem;
-  padding-right: 1rem;
   height: 3.5rem;
-  box-sizing: border-box;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin-bottom: 1rem;
+  overflow: hidden;
   opacity: 0;
   animation: fadeInFromBottom 1s ease-out forwards;
-}
-.menu-item:hover {
 }
 
 .menu-item .info {
   display: flex;
   justify-content: space-between;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu-item .title {
   font-weight: 500;
@@ -297,6 +293,42 @@ footer {
 .menu-item .price {
   font-weight: 500;
   font-size: 0.8rem;
+}
+
+.menu-item .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  /* width: 100%; */
+  padding: 0.5rem;
+  padding-right: 1rem;
+  /* border: 1px red solid; */
+}
+
+.menu-item:hover .check {
+  animation: expandLeftToRight 0.3s forwards linear;
+}
+.menu-item:not(:hover) .check {
+  animation: contractRightToLeft 0.3s forwards linear;
+}
+
+.menu-item .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 0px;
+  background-color: #88e0cb;
+}
+
+.check:hover {
+  cursor: pointer;
+}
+
+.fa-circle-check {
+  color: white;
+  font-size: 1.2rem;
 }
 
 .section-title {
@@ -328,6 +360,22 @@ footer {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes expandLeftToRight {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50px;
+  }
+}
+@keyframes contractRightToLeft {
+  0% {
+    width: 50px;
+  }
+  100% {
+    width: 0px;
   }
 }
 
