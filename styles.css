@@ -279,20 +279,24 @@ footer {
 
 .menu-item .info {
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  /* overflow: hidden; */
 }
 .menu-item .title {
   font-weight: 500;
   font-size: 1rem;
 }
-.menu-item span {
+.menu-item .description {
   font-size: 0.8rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu-item .price {
   font-weight: 500;
   font-size: 0.8rem;
+  margin-left: 1rem;
 }
 
 .menu-item .main {
@@ -300,10 +304,9 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
-  /* width: 100%; */
+  overflow: hidden;
   padding: 0.5rem;
   padding-right: 1rem;
-  /* border: 1px red solid; */
 }
 
 .menu-item:hover {
@@ -328,7 +331,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 0px;
+  min-width: 0px;
   background-color: #88e0cb;
 }
 
