@@ -68,7 +68,7 @@ p {
 }
 
 .explore-button {
-  background: rgb(158, 88, 221);
+  /* background: rgb(158, 88, 221); */
   background: linear-gradient(
     352deg,
     rgba(158, 88, 221, 1) 0%,
@@ -84,6 +84,11 @@ p {
 }
 .explore-button:hover {
   cursor: pointer;
+  background: linear-gradient(
+    352deg,
+    rgb(184, 102, 255) 0%,
+    rgb(255, 124, 240) 100%
+  );
 }
 
 .tutorial {
