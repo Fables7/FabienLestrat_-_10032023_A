@@ -306,11 +306,21 @@ footer {
   /* border: 1px red solid; */
 }
 
-.menu-item:hover .check {
-  animation: expandLeftToRight 0.3s forwards linear;
+.menu-item:hover {
+  .check {
+    animation: expandLeftToRight 0.3s forwards linear;
+  }
+  .fa-circle-check {
+    animation: rotate360 0.3s forwards linear;
+  }
 }
-.menu-item:not(:hover) .check {
-  animation: contractRightToLeft 0.3s forwards linear;
+.menu-item:not(:hover) {
+  .check {
+    animation: contractRightToLeft 0.3s forwards linear;
+  }
+  .fa-circle-check {
+    animation: rotate360Back 0.3s forwards linear;
+  }
 }
 
 .menu-item .check {
@@ -376,6 +386,24 @@ footer {
   }
   100% {
     width: 0px;
+  }
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate360Back {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
