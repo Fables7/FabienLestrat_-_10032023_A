@@ -159,3 +159,16 @@ p {
 .item-details i {
   font-size: 1.7rem;
 }
+
+footer {
+  height: 10rem;
+  background-color: #343535;
+  padding: 1.5rem;
+  color: white;
+}
+
+.footer-logo {
+  font-size: 1.3rem;
+  color: white;
+  font-family: Shrikhand;
+}
