@@ -80,6 +80,9 @@ p {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   font-size: 1rem;
 }
+.explore-button:hover {
+  cursor: pointer;
+}
 
 .tutorial {
   padding: 1.5rem;
@@ -257,7 +260,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
   padding-right: 1rem;
 }
 
@@ -299,4 +302,13 @@ footer {
   margin-bottom: 0.9rem;
   height: 0.2rem;
   background-color: #88e0cb;
+}
+
+.order-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
 }
