@@ -1,6 +1,10 @@
 body {
   font-family: Roboto;
   margin: 0;
+  border: 1px red solid;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
   /* display: flex;
   flex-direction: column;
@@ -203,6 +207,7 @@ footer {
   height: 10rem;
   background-color: #343535;
   padding: 1.5rem;
+  margin-top: auto;
   color: white;
   display: flex;
   flex-direction: column;
@@ -499,7 +504,8 @@ footer {
   }
 
   .tutorial-wrapper,
-  .restaurants-wrapper {
+  .restaurants-wrapper,
+  .footer-wrapper {
     width: 100%;
     max-width: 1500px;
   }
@@ -510,10 +516,5 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .footer-wrapper {
-    width: 100%;
-    max-width: 1500px;
   }
 }
