@@ -244,7 +244,6 @@ footer {
   display: flex;
   flex-direction: column;
   height: 100%;
-  /* border: 1px red solid; */
 }
 
 .menu-wrapper h2 {
@@ -498,6 +497,7 @@ footer {
   }
 
   .tutorial-wrapper,
+  .menu-wrapper,
   .restaurants-wrapper,
   .footer-wrapper {
     width: 100%;
@@ -505,6 +505,7 @@ footer {
   }
 
   .restaurants-container,
+  .menu-container,
   footer,
   .tutorial {
     display: flex;
