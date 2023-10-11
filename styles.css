@@ -94,9 +94,6 @@ p {
 
 .tutorial {
   padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .tutorial-item-container {
@@ -501,7 +498,21 @@ footer {
     height: 25rem;
   }
 
-  .tutorial-wrapper {
+  .tutorial-wrapper,
+  .restaurants-wrapper {
+    width: 100%;
+    max-width: 1500px;
+  }
+
+  .restaurants-container,
+  footer,
+  .tutorial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-wrapper {
     width: 100%;
     max-width: 1500px;
   }
