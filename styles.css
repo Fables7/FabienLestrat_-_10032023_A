@@ -461,6 +461,11 @@ footer {
   animation-delay: 1.1s;
 }
 
+.restaurant-items a {
+  text-decoration: none;
+  color: black;
+}
+
 /* Media Queries */
 
 @media (min-width: 768px) {
