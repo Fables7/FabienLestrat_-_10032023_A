@@ -330,14 +330,6 @@ footer {
     animation: rotate360 0.3s forwards linear;
   }
 }
-/* .menu-item:not(:hover) {
-  .check {
-    animation: contractRightToLeft 0.3s forwards linear;
-  }
-  .fa-circle-check {
-    animation: rotate360Back 0.3s forwards linear;
-  }
-} */
 
 .menu-item .check {
   display: flex;
@@ -578,8 +570,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: var(--uib-size);
-  width: var(--uib-size);
+  height: 50px;
+  width: 50px;
 }
 
 .dot-spinner__dot {
