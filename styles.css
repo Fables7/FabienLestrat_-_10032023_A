@@ -225,7 +225,7 @@ footer {
 .footer-links {
   margin-top: 1rem;
   display: flex;
-  height: 65%;
+  height: 85%;
   justify-content: space-between;
   flex-direction: column;
 }
