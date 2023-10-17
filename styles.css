@@ -322,13 +322,12 @@ footer {
   padding-right: 1rem;
 }
 
-.menu-item:hover {
-  .check {
-    animation: expandLeftToRight 0.3s forwards linear;
-  }
-  .fa-circle-check {
-    animation: rotate360 0.3s forwards linear;
-  }
+.menu-item:hover .check {
+  animation: expandLeftToRight 0.3s forwards linear;
+}
+
+.menu-item:hover .fa-circle-check {
+  animation: rotate360 0.3s forwards linear;
 }
 
 .menu-item .check {
