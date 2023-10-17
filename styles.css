@@ -553,7 +553,7 @@ footer {
   display: none;
 }
 
-.like:checked ~ .checkmark .filled {
+.like:hover ~ .checkmark .filled {
   display: block;
 }
 
